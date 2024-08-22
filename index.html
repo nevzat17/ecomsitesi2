@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayakkabı Mağazası</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ayakkabı Mağazası</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#cart">Sepet</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="home">
+        <section id="products">
+            <h2>Ürünler</h2>
+            <div class="product">
+                <img src="shoe1.jpg" alt="Ayakkabı 1">
+                <h3>Ayakkabı Modeli 1</h3>
+                <p>Fiyat: $50</p>
+                <button onclick="addToCart('Ayakkabı Modeli 1', 50)">Sepete Ekle</button>
+            </div>
+            <div class="product">
+                <img src="shoe2.jpg" alt="Ayakkabı 2">
+                <h3>Ayakkabı Modeli 2</h3>
+                <p>Fiyat: $60</p>
+                <button onclick="addToCart('Ayakkabı Modeli 2', 60)">Sepete Ekle</button>
+            </div>
+            <!-- Diğer ürünler buraya eklenebilir -->
+        </section>
+        
+        <section id="cart">
+            <h2>Sepet</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Toplam: $0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ayakkabı Mağazası</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
